@@ -26,15 +26,15 @@ public class main {
 	
 	public static void main(String[] args) {
 		readFile();
-		Coche coche2 = new Coche(2, "4456", "marca", "modelo", "color");
-		Coche coche3 = new Coche(3, "4457", "marca", "modelo", "color");
-		listaCoches.add(coche3);
-		listaCoches.add(coche2);
+		//Coche coche2 = new Coche(2, "4456", "marca", "modelo", "color");
+		//Coche coche3 = new Coche(3, "4457", "marca", "modelo", "color");
+		//listaCoches.add(coche3);
+		//listaCoches.add(coche2);
 		
 		
 		while (continuar == true) {
 			System.out.println("Elige una de las siguientes opciones");
-			System.out.println("AÃ±adir coche --> pulsar el 1");
+			System.out.println("Añadir coche --> pulsar el 1");
 			System.out.println("Borrar coche por id --> pulsar el 2");
 			System.out.println("Buscar coche por id --> pulsar el 3");
 			System.out.println("Listado de los coches --> pulsar el 4");
@@ -95,12 +95,12 @@ public class main {
 			matricula = sc.next();
 			for (Coche c : listaCoches) {
 				if (c.getMatricula().equalsIgnoreCase(matricula)) {
-					System.out.println("La matricula tiene que ser ï¿½nica");
+					System.out.println("La matricula tiene que ser unica");
 					numero = true;
 				}
 			}
 			if (numero == false) {
-				System.out.println("Introduzca el la marca del coche");
+				System.out.println("Introduzca la marca del coche");
 				marca = sc.next();
 				System.out.println("Introduzca el modelo del coche");
 				modelo = sc.next();
