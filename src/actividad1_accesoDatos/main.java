@@ -34,12 +34,12 @@ public class main {
 		
 		while (continuar == true) {
 			System.out.println("Elige una de las siguientes opciones");
-			System.out.println("Añadir coche --> pulsar el 1");
-			System.out.println("Borrar coche por id --> pulsar el 2");
-			System.out.println("Buscar coche por id --> pulsar el 3");
-			System.out.println("Listado de los coches --> pulsar el 4");
-			System.out.println("Exportar datos --> pulsa el 5");
-			System.out.println("Salir del programa --> pulsa el 6");
+			System.out.println("1. AÃ±adir coche.");
+			System.out.println("2. Borrar coche por id.");
+			System.out.println("3. Buscar coche por id .");
+			System.out.println("4. Listado de los coches.");
+			System.out.println("5. Exportar datos.");
+			System.out.println("6. Salir del programa.");
 			opcion = sc.nextInt();
 			sc.nextLine();
 
