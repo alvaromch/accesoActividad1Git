@@ -17,7 +17,6 @@ public class main {
 	public static void main(String[] args) {
 
 		List<Coche> listaCoches = new ArrayList();
-		
 		Coche coche = new Coche();
 		Scanner sc = new Scanner(System.in);
 		int opcion;
