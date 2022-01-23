@@ -25,13 +25,13 @@ public class main {
 	static FileManager administrationFile = new FileManager(directionFile);
 	
 	public static void main(String[] args) {
-
-		// Coche coche2 = new Coche(2, "4456", "marca", "modelo", "color");
-		// Coche coche3 = new Coche(3, "4457", "marca", "modelo", "color");
-		// listaCoches.add(coche3);
-		// listaCoches.add(coche2);
-
 		readFile();
+		Coche coche2 = new Coche(2, "4456", "marca", "modelo", "color");
+		Coche coche3 = new Coche(3, "4457", "marca", "modelo", "color");
+		listaCoches.add(coche3);
+		listaCoches.add(coche2);
+		
+		
 		while (continuar == true) {
 			System.out.println("Elige una de las siguientes opciones");
 			System.out.println("Añadir coche --> pulsar el 1");
@@ -114,16 +114,18 @@ public class main {
 	}
 
 	public static void clearCar() {
+		System.out.println(listaCoches.size());
 		System.out.println("Introduzca el id del coche que quiere borrar");
 		id = sc.nextInt();
 		boolean numero2 = false;
-		for (Coche c : listaCoches) {
-			if (c.getId() == id) {
-
-				listaCoches.remove(c);
-				numero2 = true;
-			}
-		}
+		 for(int i=0;i<listaCoches.size();i++){
+		        if (listaCoches.get(i).getId()==id) {
+		        	System.out.println("es igual");
+		        	numero2= true;
+		        	listaCoches.remove(i);
+		        }
+		    }
+		
 		if (numero2 == true) {
 			System.out.println("El coche ha sido borrado");
 		} else {
@@ -150,6 +152,8 @@ public class main {
 	}
 	public static void showCars() {
 		System.out.println("Los coches de la lista son:");
+		
+		
 		for (Coche c : listaCoches) {
 			System.out.println(c);
 		}
