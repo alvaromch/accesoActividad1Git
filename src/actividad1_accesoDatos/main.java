@@ -17,10 +17,7 @@ public class main {
 	public static void main(String[] args) {
 
 		List<Coche> listaCoches = new ArrayList();
-		// Coche coche2 = new Coche(2, "4456", "marca", "modelo", "color");
-		// Coche coche3 = new Coche(3, "4457", "marca", "modelo", "color");
-		// listaCoches.add(coche3);
-		// listaCoches.add(coche2);
+		
 		Coche coche = new Coche();
 		Scanner sc = new Scanner(System.in);
 		int opcion;
